@@ -65,19 +65,20 @@ li {
   /* margin: 20px; */
   display: flex;
   /* margin-top: 50px; */
-  height: 65vh;
+  height: 63vh;
   width: 100%;
 
   align-items: flex-end;
   justify-content: space-around;
 }
 .pictureHere img {
-  height: 65vh;
+  height: 55vh;
   width: 30vw;
   position: absolute;
-  left: -6px;
+  left: 7px;
+  top: 133.5px;
   object-fit: contain;
-  border-bottom-left-radius: 80px 80px;
+  border-bottom-left-radius: 40px 40px;
 }
 .pictureHere p {
   font-size: 18px;
@@ -99,4 +100,18 @@ li {
 main {
   height: 100vh;
   /* background: radial-gradient(100% 200% at left, #201c2b 50%, black 50%); */
+}
+
+@media screen and (max-width: 1000px) {
+  .pictureHere {
+    height: 65vh;
+  }
+  .pictureHere img {
+    height: 50vh;
+    top: 210px;
+    left: 37px;
+  }
+  .myName h1 {
+    font-size: 14px;
+  }
 }

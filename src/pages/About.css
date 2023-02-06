@@ -1,0 +1,18 @@
+.whoamI {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+.whoamI p {
+  background-color: hsl(282, 18%, 22%, 1);
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  height: 55vh;
+  width: 40vw;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 20px;
+}
