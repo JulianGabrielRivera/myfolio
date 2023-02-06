@@ -75,8 +75,8 @@ li {
   height: 55vh;
   width: 30vw;
   position: absolute;
-  left: -7.5px;
-  top: 133px;
+  left: 10px;
+  top: 138px;
   object-fit: contain;
   border-bottom-left-radius: 40px 40px;
 }
@@ -108,8 +108,8 @@ main {
   }
   .pictureHere img {
     height: 50vh;
-    top: 210px;
-    left: 37px;
+    top: 136px;
+    left: 25px;
   }
   .myName h1 {
     font-size: 14px;

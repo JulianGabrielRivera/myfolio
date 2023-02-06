@@ -12,7 +12,11 @@ function App() {
         <>
           <a
             href="https://github.com/JulianGabrielRivera"
-            style={{ color: "white", marginTop: "50px", marginBottom: "40px" }}
+            style={{
+              color: "white",
+              marginTop: "50px",
+              marginBottom: "40px",
+            }}
           >
             <i class="fa-brands fa-github"></i>
           </a>
