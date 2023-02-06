@@ -1,26 +1,18 @@
 import "./Home.css";
 import { Sky, Cloud } from "@react-three/drei";
 import { Canvas } from "react-three-fiber";
+import { Link, NavLink } from "react-router-dom";
+import Typewriter from "typewriter-effect";
 
 const Home = () => {
   return (
-    <>
-      <div className="headerContainer">
-        <div className="myName">
-          <h1>Julian Gabriel Rivera</h1>
-        </div>
-        <div className="navBar">
-          <nav>
-            <li>Home</li>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Info</li>
-          </nav>
-        </div>
-      </div>
-
+    <main>
       <section className="pictureHere">
-        <Canvas style={{ borderBottomLeftRadius: "80px 80px" }}>
+        <Canvas
+          style={{
+            borderBottomLeftRadius: "80px 80px",
+          }}
+        >
           <ambientLight intensity={1} />
           <pointLight intensity={2} position={[0, 0, -1000]} />
           {/* <Cloud
@@ -46,8 +38,19 @@ const Home = () => {
             segments={15} // Number of particles
           />
         </Canvas>
-        <img src="../images/sidepic2.png" alt="" />
-        <p style={{ position: "absolute" }}>A Full Stack Web Developer</p>
+        <img src="../images/side.png" alt="" />
+        <div className="fullStack">
+          <Typewriter
+            options={{
+              strings: ["A Full Stack Web Developer"],
+              autoStart: true,
+
+              delay: 60,
+              pauseFor: 10000000000,
+              cursor: "...",
+            }}
+          />
+        </div>
         {/* <p>A Full Stack Web Developer</p>
         <p className="aboutMe">
           Julian Gabriel Rivera, born in Puerto Rico but raised in Florida. My
@@ -62,7 +65,7 @@ const Home = () => {
           growing and learning as a Junior Developer.
         </p> */}
       </section>
-    </>
+    </main>
   );
 };
 
