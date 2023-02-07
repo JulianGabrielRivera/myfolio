@@ -1,5 +1,5 @@
 import "./Home.css";
-import { Sky, Cloud } from "@react-three/drei";
+import { Sky, Cloud, Stars, SpotLight } from "@react-three/drei";
 import { Canvas } from "react-three-fiber";
 import { Link, NavLink } from "react-router-dom";
 import Typewriter from "typewriter-effect";
@@ -29,13 +29,12 @@ const Home = () => {
             width={30} // Width of the full cloud
             depth={1.5}
           /> */}
-          <Cloud
-            position={[-15, -5, -2]}
-            speed={2}
-            opacity={1}
-            width={0} // Width of the full cloud
-            depth={1}
-            segments={15} // Number of particles
+          <SpotLight
+            distance={35}
+            angle={3}
+            position={[2, 2, 2]}
+            attenuation={4.5}
+            anglePower={4} // Diffuse-cone anglePower (default: 5)
           />
         </Canvas>
         <img src="../images/side.png" alt="" />

@@ -75,7 +75,7 @@ li {
   height: 55vh;
   width: 30vw;
   position: absolute;
-  left: 10px;
+  left: 20px;
   top: 138px;
   object-fit: contain;
   border-bottom-left-radius: 40px 40px;
@@ -101,7 +101,19 @@ main {
   height: 100vh;
   /* background: radial-gradient(100% 200% at left, #201c2b 50%, black 50%); */
 }
-
+@media screen and (max-width: 1400px) {
+  .pictureHere {
+    height: 65vh;
+  }
+  .pictureHere img {
+    height: 50vh;
+    top: 136px;
+    left: 15px;
+  }
+  .myName h1 {
+    font-size: 14px;
+  }
+}
 @media screen and (max-width: 1000px) {
   .pictureHere {
     height: 65vh;
@@ -109,7 +121,7 @@ main {
   .pictureHere img {
     height: 50vh;
     top: 136px;
-    left: 25px;
+    left: 12px;
   }
   .myName h1 {
     font-size: 14px;
