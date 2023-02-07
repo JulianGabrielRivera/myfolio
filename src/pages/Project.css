@@ -48,3 +48,14 @@
   border-bottom-right-radius: 20px 20px;
   border-bottom-left-radius: 20px 20px;
 }
+.cardButton button {
+  background-color: black;
+
+  height: 35px;
+  border-radius: 10px;
+  border-color: black;
+}
+.cardButton a {
+  text-decoration: none;
+  color: white;
+}

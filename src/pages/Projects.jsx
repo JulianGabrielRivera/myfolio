@@ -25,7 +25,9 @@ const Projects = () => {
             Express.js, Node.js.
           </p>
           <div className="cardButton">
-            <button>Click to See</button>
+            <button>
+              <a href="https://numinoustravels.netlify.app/">Click to See</a>
+            </button>
           </div>
         </div>
       </section>
@@ -43,24 +45,9 @@ const Projects = () => {
             else what kind of person they were.
           </p>
           <div className="cardButton">
-            <button>Click to See</button>
-          </div>
-        </div>
-      </section>
-
-      <section id="thirdProject">
-        <div className="card">
-          <h4>Space Between</h4>
-          <img src="../images/spacebetween.png" alt="" />
-          <p>
-            My game project, designed with vanilla Javascript. Example of DOM
-            manipulation, using class constructors, pushing images into an
-            array, using velocity, math random math floor, adjusted frames so
-            each level it gets harder and also attached event listener to listen
-            to our WASD press down
-          </p>
-          <div className="cardButton">
-            <button>Click to See</button>
+            <button>
+              <a href="https://numinoustravels.netlify.app/">Click to See</a>
+            </button>
           </div>
         </div>
       </section>
@@ -74,7 +61,31 @@ const Projects = () => {
             with some differences using DOM manipulation.
           </p>
           <div className="cardButton">
-            <button>Click to See</button>
+            <button>
+              <a href="https://juliangabrielrivera.github.io/wordgame/">
+                Click to See
+              </a>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="thirdProject">
+        <div className="card">
+          <h4>Space Between</h4>
+          <img src="../images/spacebetween.png" alt="" />
+          <p>
+            My game project, designed with vanilla Javascript. Example of DOM
+            manipulation, using class constructors, pushing images into an
+            array, using velocity, math random math floor, adjusted frames so
+            each level it gets harder and also attached event listener to listen
+            to our WASD press down
+          </p>
+          <div className="cardButton">
+            <button>
+              <a href="https://juliangabrielrivera.github.io/SpaceBetween/">
+                Click to See
+              </a>
+            </button>
           </div>
         </div>
       </section>
