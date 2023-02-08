@@ -8,6 +8,15 @@ const Home = () => {
   return (
     <main>
       <section className="pictureHere">
+        <p
+          style={{
+            position: "fixed",
+            bottom: "0",
+            left: "50px",
+          }}
+        >
+          juliangabrielriveradev@gmail.com
+        </p>
         <Canvas
           style={{
             borderBottomLeftRadius: "80px 80px",

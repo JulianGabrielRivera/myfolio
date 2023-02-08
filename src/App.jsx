@@ -4,8 +4,10 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function App() {
+  const [show, setShow] = useState(false);
   return (
     <div className="App">
       <div className="sideBar">
@@ -32,24 +34,68 @@ function App() {
         <div className="myName">
           <h1>Julian Gabriel Rivera</h1>
         </div>
-        <div className="navBar">
-          <div className="navBar2">
-            <Link to={"/"} style={{ textDecoration: "none", color: "white" }}>
-              Home
-            </Link>
-            <Link
-              to={"/about"}
-              style={{ textDecoration: "none", color: "white" }}
+        <div>
+          {show ? (
+            <div
+              class="dropdown"
+              onClick={() => {
+                setShow(!show);
+              }}
             >
-              About
-            </Link>
-            <Link
-              to={"/projects"}
-              style={{ textDecoration: "none", color: "white" }}
+              <button class="dropDownButton">Explore</button>
+              <ul class="dropdown-menu">
+                <li>
+                  <button class="dropdown-item" type="button">
+                    <Link to="/" class="item">
+                      Home
+                    </Link>
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item" type="button">
+                    <Link to="/about" class="item">
+                      About
+                    </Link>
+                  </button>
+                </li>
+                <li>
+                  <button class="dropdown-item" type="button">
+                    <Link to="/Projects" class="item">
+                      Projects
+                    </Link>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          ) : (
+            <button
+              class="dropDownButton "
+              onClick={() => {
+                setShow(!show);
+              }}
             >
-              Projects
-            </Link>
-          </div>
+              Explore
+            </button>
+          )}
+        </div>
+      </div>
+      <div className="navBar">
+        <div className="navBar2">
+          <Link to={"/"} style={{ textDecoration: "none", color: "white" }}>
+            Home
+          </Link>
+          <Link
+            to={"/about"}
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            About
+          </Link>
+          <Link
+            to={"/projects"}
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            Projects
+          </Link>
         </div>
       </div>
       <Routes>

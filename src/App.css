@@ -27,3 +27,30 @@
     /* left: -20px; */
   }
 }
+@media screen and (max-width: 600px) {
+  .dropDownButton {
+    background-color: #201c2b;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 80px;
+    height: 25px;
+  }
+  .dropdown-item {
+    background-color: #201c2b;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 80px;
+    height: 25px;
+  }
+  .item {
+    text-decoration: none;
+    color: white;
+  }
+}
+@media screen and (min-width: 600px) {
+  .dropDownButton {
+    display: none;
+  }
+}

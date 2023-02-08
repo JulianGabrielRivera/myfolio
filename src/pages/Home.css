@@ -24,7 +24,7 @@ html {
   /* margin-top: 30px; */
   position: relative;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   /* background: radial-gradient(100% 200% at left, #201c2b 50%, black 50%); */
 
   /* border-bottom: 1px solid white;
@@ -125,5 +125,10 @@ main {
   }
   .myName h1 {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .navBar2 {
+    display: none;
   }
 }
