@@ -1,10 +1,4 @@
-.App {
-  /* display: flex; */
-  text-align: center;
-  height: 100%vh;
-  width: 100vw;
-  background: radial-gradient(100% 200% at left, #201c2b 50%, black 50%);
-}
+
 .sideBar {
   display: flex;
   flex-direction: column;
@@ -16,6 +10,9 @@
   z-index: 1000;
   /* left: -20px; */
 }
+/* .myName{
+  
+} */
 
 @media screen and (max-width: 1600px) {
   .sideBar {
@@ -28,22 +25,39 @@
   }
 }
 @media screen and (max-width: 600px) {
+  .dropDiv {
+    width: 100%;
+  }
   .dropDownButton {
     background-color: #201c2b;
     color: white;
-    border-radius: 10px;
     border: 1px solid black;
-    width: 80px;
-    height: 25px;
+    width: 40%;
+    position: absolute;
+    z-index: 1;
+    top: 8px;
+    right: 0px;
+
+    /* height: 10%; */
+  }
+  .dropdown-menu {
+    display: flex;
+    /* so that when we do position absolute it doesnt resize container */
+    flex-direction: column;
+    /* to stop from resizing */
+    position: absolute;
+    /* for click to work */
+    z-index: 1;
   }
   .dropdown-item {
     background-color: #201c2b;
     color: white;
     border-radius: 10px;
     border: 1px solid black;
-    width: 80px;
-    height: 25px;
+    width: 5rem;
+    height: 5%;
   }
+
   .item {
     text-decoration: none;
     color: white;

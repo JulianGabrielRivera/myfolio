@@ -9,8 +9,8 @@ import { useState } from "react";
 function App() {
   const [show, setShow] = useState(false);
   return (
-    <div className="App">
-      <div className="sideBar">
+    <>
+      {/* <div className="sideBar">
         <>
           <a
             href="https://github.com/JulianGabrielRivera"
@@ -29,12 +29,25 @@ function App() {
             <i class="fa-brands fa-linkedin"></i>
           </a>
         </>
-      </div>
+      </div> */}
       <div className="headerContainer">
         <div className="myName">
-          <h1>Julian Gabriel Rivera</h1>
+          <h1 className="myName">Julian Gabriel Rivera</h1>
         </div>
-        <div>
+        <div className="navBar">
+          {/* <div className="navBar2"> */}
+          <Link to={"/"} className="navLi">
+            Home
+          </Link>
+          <Link to={"/about"} className="navLi">
+            About
+          </Link>
+          <Link to={"/projects"} className="navLi">
+            Projects
+          </Link>
+          {/* </div> */}
+        </div>
+        <div className="dropDiv">
           {show ? (
             <div
               class="dropdown"
@@ -79,32 +92,13 @@ function App() {
           )}
         </div>
       </div>
-      <div className="navBar">
-        <div className="navBar2">
-          <Link to={"/"} style={{ textDecoration: "none", color: "white" }}>
-            Home
-          </Link>
-          <Link
-            to={"/about"}
-            style={{ textDecoration: "none", color: "white" }}
-          >
-            About
-          </Link>
-          <Link
-            to={"/projects"}
-            style={{ textDecoration: "none", color: "white" }}
-          >
-            Projects
-          </Link>
-        </div>
-      </div>
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
 
         <Route path="/projects" element={<Projects />}></Route>
       </Routes>
-    </div>
+    </>
   );
 }
 

@@ -7,16 +7,8 @@ import Typewriter from "typewriter-effect";
 const Home = () => {
   return (
     <main>
+      <div>{/* <p>juliangabrielriveradev@gmail.com</p> */}</div>
       <section className="pictureHere">
-        <p
-          style={{
-            position: "fixed",
-            bottom: "0",
-            left: "50px",
-          }}
-        >
-          juliangabrielriveradev@gmail.com
-        </p>
         <Canvas
           style={{
             borderBottomLeftRadius: "80px 80px",
@@ -46,7 +38,7 @@ const Home = () => {
             anglePower={4} // Diffuse-cone anglePower (default: 5)
           />
         </Canvas>
-        <img src="../images/side.png" alt="" />
+        {/* <img src="../images/side.png" alt="" id="julian" /> */}
         <div className="fullStack">
           <Typewriter
             options={{
@@ -73,6 +65,10 @@ const Home = () => {
           growing and learning as a Junior Developer.
         </p> */}
       </section>
+      <div className="footerContainer">
+        <p>juliangabrielriveradev@gmail.com</p>
+        <p>linkedin.com/in/julian-g-rivera/</p>
+      </div>
     </main>
   );
 };

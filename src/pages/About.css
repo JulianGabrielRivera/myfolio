@@ -1,5 +1,6 @@
 .whoamI {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   height: 100vh;
@@ -8,11 +9,17 @@
   background-color: hsl(282, 18%, 22%, 1);
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   height: 55vh;
-  width: 40vw;
+  width: 60vw;
   text-align: left;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  padding: 20px;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+@media (max-width: 1000px) {
+  .whoamI p {
+    font-size: 0.8rem;
+  }
 }

@@ -4,16 +4,17 @@ import "./Project.css";
 const Projects = () => {
   return (
     <>
-      <section id="projects">
-        <p
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          MY LATEST WORK
-        </p>
+      <p
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        MY LATEST WORK
+      </p>
+      <div className="allProjects">
+        {/* <section id="projects"> */}
         <div className="card">
           <h4>Numinous</h4>
           <img src="../images/numious.jpeg" alt="" />
@@ -30,8 +31,8 @@ const Projects = () => {
             </button>
           </div>
         </div>
-      </section>
-      <section id="secondProject">
+        {/* </section> */}
+        {/* <section id="secondProject"> */}
         <div className="card">
           <h4>Fitnessa</h4>
           <img src="../images/fitnessa.png" alt="" />
@@ -50,9 +51,8 @@ const Projects = () => {
             </button>
           </div>
         </div>
-      </section>
-
-      <section id="fourthProject">
+        {/* </section>
+        <section id="fourthProject"> */}
         <div className="card">
           <h4>Wordle</h4>
           <img src="../images/wordle.jpeg" alt="" />
@@ -68,8 +68,8 @@ const Projects = () => {
             </button>
           </div>
         </div>
-      </section>
-      <section id="thirdProject">
+        {/* </section> */}
+        {/* <section id="thirdProject"> */}
         <div className="card">
           <h4>Space Between</h4>
           <img src="../images/spacebetween.png" alt="" />
@@ -88,7 +88,8 @@ const Projects = () => {
             </button>
           </div>
         </div>
-      </section>
+        {/* </section> */}
+      </div>
     </>
   );
 };

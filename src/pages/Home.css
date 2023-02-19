@@ -1,5 +1,4 @@
 body {
-  width: 98vw;
   /* background-color: #201c2b; */
   /* background: linear-gradient(
     to right,
@@ -8,11 +7,13 @@ body {
     #101010 50%,
     #101010 100%
   ); */
-
+  text-align: center;
+  height: 100%;
+  width: 100vw;
+  background: radial-gradient(100% 200% at left, #201c2b 50%, black 50%);
   color: white;
   padding: 0;
   margin: 0;
-  position: relative;
 }
 html {
   font-size: 16px;
@@ -21,50 +22,53 @@ html {
 .headerContainer {
   display: flex;
   width: 100%;
-  /* margin-top: 30px; */
-  position: relative;
+
   align-items: center;
   justify-content: space-around;
-  /* background: radial-gradient(100% 200% at left, #201c2b 50%, black 50%); */
-
-  /* border-bottom: 1px solid white;
-  border-bottom-left-radius: 20px 20px;
-  border-top-left-radius: 20px 20px; */
-
-  /* justify-content: space-around; */
+}
+.footerContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footerContainer p {
+  display: flex;
+  font-size: 1rem;
+  justify-content: space-around;
+}
+.myName {
+  width: 100%;
 }
 .navBar {
   display: flex;
   align-items: center;
-  width: 60%;
+  justify-content: center;
+  width: 100%;
+  /* width: 60%; */
   /* justify-content: flex-end; */
 }
-.myName {
-  width: 30%;
-  align-self: flex-start;
+
+.navLi {
+  margin-right: 7%;
+  text-decoration: none;
+  color: white;
 }
 .navBar2 {
   /* width: 60vw; */
-  width: 30vw;
-  color: white;
   display: flex;
+  color: white;
+
   justify-content: space-between;
   align-items: center;
-  transform: rotate(90deg);
-  position: fixed;
-  top: 310px;
-  right: 0px;
-  cursor: pointer;
-  z-index: 1000;
+
   text-decoration: none;
 }
 li {
   list-style-type: none;
 }
 .pictureHere {
-  /* margin: 20px; */
   display: flex;
-  /* margin-top: 50px; */
+
   height: 63vh;
   width: 100%;
 
@@ -81,7 +85,7 @@ li {
   border-bottom-left-radius: 40px 40px;
 }
 .pictureHere p {
-  font-size: 18px;
+  font-size: 1.1rem;
 }
 .fullStack {
   position: absolute;
@@ -101,6 +105,7 @@ main {
   height: 100vh;
   /* background: radial-gradient(100% 200% at left, #201c2b 50%, black 50%); */
 }
+
 @media screen and (max-width: 1400px) {
   .pictureHere {
     height: 65vh;
@@ -111,7 +116,7 @@ main {
     left: 15px;
   }
   .myName h1 {
-    font-size: 14px;
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -123,12 +128,23 @@ main {
     top: 136px;
     left: 12px;
   }
-  .myName h1 {
-    font-size: 14px;
+  .myName {
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 600px) {
+  .navBar {
+    display: none;
+  }
   .navBar2 {
     display: none;
+  }
+  .myName {
+    font-size: 1rem;
+  }
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
   }
 }
